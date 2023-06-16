@@ -12,7 +12,7 @@ Example:
 
 .. code-block:: html
 
-    <script src="https://raw.githubusercontent.com/zephr1213/blend.js/main/blend.min.js"></script>
+    <script src="https://raw.githubusercontent.com/zephr1213/blend.js/main/blend.js"></script>
 
 License
 -------
