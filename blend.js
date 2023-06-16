@@ -35,28 +35,7 @@ function formatNumberWithCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
-// Function to debounce a function call, ensuring it is executed only after a delay of time
-function debounce(func, delay) {
-    let timeoutId;
-    return (...args) => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-            func.apply(null, args);
-        }, delay);
-    };
-}
 
-// Function to throttle a function call, ensuring it is executed at most once every delay milliseconds
-function throttle(func, delay) {
-    let lastCallTime = 0;
-    return (...args) => {
-        const now = Date.now();
-        if (now - lastCallTime >= delay) {
-            func.apply(null, args);
-            lastCallTime = now;
-        }
-    };
-}
 
 // Function to check if a string is a palindrome
 function isPalindrome(string) {
